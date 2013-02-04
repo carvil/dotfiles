@@ -1,5 +1,12 @@
 set nocompatible
 
+filetype off
+set runtimepath+=~/.vim/bundle/vundle/
+call vundle#rc()
+Bundle 'gmarik/vundle'
+Bundle 'VimClojure'
+filetype on
+
 autocmd VimEnter * NERDTree
 
 " delete the toolbar
@@ -50,6 +57,9 @@ let mapleader = ","
 " makes ,w split windows vertically
 nnoremap <leader>w <C-w>v<C-w>l
 
+" Ctrl+w t toggles nerdtree
+map <C-w>t :NERDTreeToggle<CR>
+
 " split window navigation
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
@@ -57,7 +67,8 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
 " font
-set guifont=Inconsolata:h12
+" set guifont=Inconsolata:h12
+set guifont=Inconsolata-dz\ for\ Powerline:h12
 
 set wrap
 set guioptions=aAce
@@ -87,7 +98,7 @@ set nobackup
 set nowb
 set noswapfile
 
-" Move a line of text using ALT+[jk] or Comamnd+[jk] on mac
+" Move a line of text using Comamnd+[jk]
 nmap <M-j> mz:m+<cr>`z
 nmap <M-k> mz:m-2<cr>`z
 vmap <M-j> :m'>+<cr>`<my`>mzgv`yo`z
