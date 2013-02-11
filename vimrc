@@ -5,6 +5,8 @@ set runtimepath+=~/.vim/bundle/vundle/
 call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'VimClojure'
+Bundle 'mattn/webapi-vim'
+Bundle 'mattn/gist-vim'
 filetype on
 
 autocmd VimEnter * NERDTree
