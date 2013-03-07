@@ -14,9 +14,6 @@ source $ZSH/oh-my-zsh.sh
 export PATH="$PATH:~/.rbenv/bin"
 eval "$(rbenv init -)"
 
-# Export MacVim
-export PATH=$PATH:/Applications/MacVim-snapshot-64/
-
 # Adding p4merge to the path
 export PATH=$PATH:/Applications/p4/p4merge.app/Contents/MacOS/
 

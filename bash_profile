@@ -5,11 +5,6 @@ export LSCOLORS=ExFxCxDxBxegedabagacad
 # Configure my prompt
 export PS1="\[\033[0;32m\]\u\[\033[0m\] @ \W$ "
 
-# Export MacVim
-export PATH=$PATH:/Applications/MacVim-snapshot-64/
-# Export RabbitMQ
-#export PATH=$PATH:/usr/local/Cellar/rabbitmq/2.5.1/sbin/
-
 export PATH=$PATH:/usr/local/bin/
 export PATH=$PATH:/usr/local/sbin/
 
