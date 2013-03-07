@@ -7,6 +7,7 @@ Bundle 'gmarik/vundle'
 Bundle 'VimClojure'
 Bundle 'mattn/webapi-vim'
 Bundle 'mattn/gist-vim'
+Bundle 'airblade/vim-gitgutter'
 filetype on
 
 autocmd VimEnter * NERDTree
