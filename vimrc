@@ -8,6 +8,8 @@ Bundle 'VimClojure'
 Bundle 'mattn/webapi-vim'
 Bundle 'mattn/gist-vim'
 Bundle 'airblade/vim-gitgutter'
+Bundle 'git://git.wincent.com/command-t.git'
+Bundle "tpope/vim-commentary"
 filetype on
 
 autocmd VimEnter * NERDTree
