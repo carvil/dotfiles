@@ -56,7 +56,7 @@ function setup_vim {
   echo '\033[32m    + Cloning vundle \033[0m'
   git clone https://github.com/gmarik/vundle.git $BASE_DIR/.vim/bundle/vundle
   echo '\033[32m    + Installing bundle \033[0m'
-  vim +BundleInstall +BundleClean +qall
+  vim -u ~/.vimrc - +BundleInstall +BundleClean +qall
   finish
 }
 
