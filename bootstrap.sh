@@ -59,18 +59,7 @@ function finish {
   echo "\033[32m  => Done! \033[0m"
 }
 
-function setup {
-  clone_dotfiles_repo
-  symlink_dotfiles
-  setup_vim
-  finish
-}
-
-while true; do
-    read -p "This will override your existing dotfiles, do you wish to continue (y/n)? " yn
-    case $yn in
-        [Yy]* ) setup; break;;
-        [Nn]* ) echo "Aborting"; exit;;
-        * ) echo "Please answer y (yes) or n (no).";;
-    esac
-done
+clone_dotfiles_repo
+symlink_dotfiles
+setup_vim
+finish
