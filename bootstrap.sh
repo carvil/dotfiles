@@ -41,25 +41,25 @@ function clone_dotfiles_repo {
   fi
 }
 
-function setup_vim {
-  echo "\033[32m  => Setup .vim \033[0m"
-  echo '\033[32m    + Creating directories (bundle,tmp,backup,autoload) \033[0m'
-  mkdir -p $BASE_DIR/.vim/{bundle,tmp,backup,autoload}
-  echo '\033[32m    + Cloning vundle \033[0m'
-  git clone https://github.com/gmarik/vundle.git $BASE_DIR/.vim/bundle/vundle
-  echo '\033[32m    + Installign bundle \033[0m'
-  vim +BundleInstall +qall
-}
-
 function finish {
-  echo "\033[32m  => Finishing up \033[0m"
+  echo '\033[32m  => Finishing up \033[0m'
   echo '\033[32m    + Copying bash completion into place \033[0m'
   cp $DOT_FILES_DIR/git-completion.bash $BASE_DIR
   echo '\033[32m    + Now, install the fonts and the zsh theme manually! \033[0m'
   echo "\033[32m  => Done! \033[0m"
 }
 
+function setup_vim {
+  echo '\033[32m  => Setup .vim \033[0m'
+  echo '\033[32m    + Creating directories (bundle,tmp,backup,autoload) \033[0m'
+  mkdir -p $BASE_DIR/.vim/{bundle,tmp,backup,autoload}
+  echo '\033[32m    + Cloning vundle \033[0m'
+  git clone https://github.com/gmarik/vundle.git $BASE_DIR/.vim/bundle/vundle
+  echo '\033[32m    + Installing bundle \033[0m'
+  vim -u NONE - +BundleInstall +BundleClean +qall
+  finish
+}
+
 clone_dotfiles_repo
 symlink_dotfiles
 setup_vim
-finish
