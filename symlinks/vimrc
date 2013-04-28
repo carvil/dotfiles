@@ -9,9 +9,10 @@ Bundle 'mattn/webapi-vim'
 Bundle 'mattn/gist-vim'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'git://git.wincent.com/command-t.git'
-Bundle "tpope/vim-commentary"
-Bundle "tpope/vim-dispatch"
+Bundle 'tpope/vim-commentary'
+Bundle 'tpope/vim-dispatch'
 Bundle 'rking/ag.vim'
+Bundle 'tpope/vim-surround'
 filetype on
 
 autocmd VimEnter * NERDTree
