@@ -11,6 +11,7 @@ Bundle 'airblade/vim-gitgutter'
 Bundle 'git://git.wincent.com/command-t.git'
 Bundle "tpope/vim-commentary"
 Bundle "tpope/vim-dispatch"
+Bundle 'rking/ag.vim'
 filetype on
 
 autocmd VimEnter * NERDTree
