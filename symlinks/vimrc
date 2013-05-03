@@ -16,6 +16,7 @@ Bundle 'rking/ag.vim'
 Bundle 'tpope/vim-surround'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-rake'
+Bundle 'tpope/vim-bundler'
 
 filetype on
 filetype plugin on
