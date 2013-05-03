@@ -3,6 +3,7 @@ set nocompatible
 filetype off
 set runtimepath+=~/.vim/bundle/vundle/
 call vundle#rc()
+
 Bundle 'gmarik/vundle'
 Bundle 'VimClojure'
 Bundle 'mattn/webapi-vim'
@@ -13,7 +14,10 @@ Bundle 'tpope/vim-commentary'
 Bundle 'tpope/vim-dispatch'
 Bundle 'rking/ag.vim'
 Bundle 'tpope/vim-surround'
+Bundle 'vim-ruby/vim-ruby'
+
 filetype on
+filetype plugin on
 
 autocmd VimEnter * NERDTree
 
