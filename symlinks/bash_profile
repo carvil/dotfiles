@@ -23,10 +23,6 @@ export BUNDLER_EDITOR='mvim'
 # Enable git autocomplete
 source ~/git-completion.bash
 
-alias gco='git co'
-alias gci='git ci'
-alias grb='git rb'
-
 # For redcarpet
 alias gcc-4.2='gcc'
 

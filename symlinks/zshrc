@@ -30,6 +30,12 @@ bindkey '^N' history-search-forward
 # smart cd
 setopt AUTO_CD
 
+# git alias
+alias gco='git co'
+alias gci='git ci'
+alias grb='git rb'
+alias glg="git log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'"
+
 # github username
 export GITHUB_USER="carvil"
 
