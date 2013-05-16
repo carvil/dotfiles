@@ -10,13 +10,6 @@ plugins=(git osx gem rbenv brew)
 # oh-my-zsh configs
 source $ZSH/oh-my-zsh.sh
 
-# Add rbenv to the path
-export PATH="$PATH:~/.rbenv/bin"
-eval "$(rbenv init -)"
-
-# Adding p4merge to the path
-export PATH=$PATH:/Applications/p4/p4merge.app/Contents/MacOS/
-
 # Using vim as default editor
 export EDITOR="vim"
 bindkey -v
@@ -39,5 +32,14 @@ alias glg="git log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(wh
 # github username
 export GITHUB_USER="carvil"
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+path=(
+  ~/.rbenv/bin
+  /Applications/p4/p4merge.app/Contents/MacOS/
+  /usr/local/{bin,sbin}
+  /usr/local/heroku/bin
+  /usr/{bin,sbin}
+  /{bin,sbin}
+  $path
+)
+
+eval "$(rbenv init -)"
