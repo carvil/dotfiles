@@ -5,7 +5,7 @@ export LSCOLORS=ExFxCxDxBxegedabagacad
 # Configure my prompt
 export PS1="\[\033[0;32m\]\u\[\033[0m\] @ \W$ "
 
-export PATH=$PATH:/usr/local/bin/
+export PATH=/usr/local/bin/:$PATH
 export PATH=$PATH:/usr/local/sbin/
 
 # Adding p4merge to the path
