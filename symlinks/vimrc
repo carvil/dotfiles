@@ -17,6 +17,7 @@ Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-obsession'
 Bundle 'Lokaltog/powerline'
 Bundle 'duff/vim-scratch'
+Bundle 'Rename'
 
 " ruby specific
 Bundle 'vim-ruby/vim-ruby'
