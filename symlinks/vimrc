@@ -5,7 +5,6 @@ set runtimepath+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
-Bundle 'VimClojure'
 Bundle 'mattn/webapi-vim'
 Bundle 'mattn/gist-vim'
 Bundle 'airblade/vim-gitgutter'
@@ -19,6 +18,11 @@ Bundle 'Lokaltog/powerline'
 Bundle 'duff/vim-scratch'
 Bundle 'Rename'
 Bundle 'slim-template/vim-slim'
+
+" clojure specific
+Bundle 'tpope/vim-classpath'
+Bundle 'tpope/vim-clojure-static'
+Bundle 'tpope/vim-fireplace'
 
 " ruby specific
 Bundle 'vim-ruby/vim-ruby'
