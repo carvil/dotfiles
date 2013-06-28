@@ -17,6 +17,7 @@ Bundle 'tpope/vim-obsession'
 Bundle 'Lokaltog/powerline'
 Bundle 'duff/vim-scratch'
 Bundle 'Rename'
+Bundle 'Yggdroot/indentLine'
 Bundle 'slim-template/vim-slim'
 
 " clojure specific
