@@ -19,6 +19,7 @@ Bundle 'duff/vim-scratch'
 Bundle 'Rename'
 Bundle 'Yggdroot/indentLine'
 Bundle 'slim-template/vim-slim'
+Bundle 'tpope/vim-cucumber'
 
 " clojure specific
 Bundle 'tpope/vim-classpath'
