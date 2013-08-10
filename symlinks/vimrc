@@ -152,6 +152,9 @@ func! DeleteTrailingWS()
 endfunc
 autocmd BufWrite * :call DeleteTrailingWS()
 
+" Enable clojure script syntax highlighting
+autocmd BufRead,BufNewFile *.cljs setlocal filetype=clojure
+
 " Disable arrow keys
 noremap  <Up> ""
 noremap! <Up> <Esc>
