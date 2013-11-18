@@ -22,6 +22,7 @@ Bundle 'slim-template/vim-slim'
 Bundle 'tpope/vim-cucumber'
 Bundle 'scrooloose/syntastic'
 Bundle 'kien/ctrlp.vim'
+Bundle 'benmills/vimux'
 
 " clojure specific
 Bundle 'tpope/vim-classpath'
