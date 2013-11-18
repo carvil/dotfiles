@@ -21,6 +21,7 @@ Bundle 'Yggdroot/indentLine'
 Bundle 'slim-template/vim-slim'
 Bundle 'tpope/vim-cucumber'
 Bundle 'scrooloose/syntastic'
+Bundle 'kien/ctrlp.vim'
 
 " clojure specific
 Bundle 'tpope/vim-classpath'
