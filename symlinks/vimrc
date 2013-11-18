@@ -24,7 +24,6 @@ Bundle 'scrooloose/syntastic'
 
 " clojure specific
 Bundle 'tpope/vim-classpath'
-Bundle 'tpope/vim-clojure-static'
 Bundle 'tpope/vim-fireplace'
 
 " ruby specific
