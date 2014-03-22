@@ -159,6 +159,9 @@ autocmd BufWrite * :call DeleteTrailingWS()
 " Enable clojure script syntax highlighting
 autocmd BufRead,BufNewFile *.cljs setlocal filetype=clojure
 
+" Set the default dispatch command
+autocmd FileType ruby let b:dispatch = 'bundle exec rake %'
+
 " Disable arrow keys
 noremap  <Up> ""
 noremap! <Up> <Esc>
