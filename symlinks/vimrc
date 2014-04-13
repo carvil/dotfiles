@@ -28,6 +28,7 @@ Bundle 'ervandew/screen'
 " clojure specific
 Bundle 'tpope/vim-classpath'
 Bundle 'tpope/vim-fireplace'
+Bundle 'guns/vim-clojure-static'
 
 " ruby specific
 Bundle 'vim-ruby/vim-ruby'
