@@ -23,6 +23,7 @@ Bundle 'tpope/vim-cucumber'
 Bundle 'scrooloose/syntastic'
 Bundle 'kien/ctrlp.vim'
 Bundle 'benmills/vimux'
+Bundle 'ervandew/screen'
 
 " clojure specific
 Bundle 'tpope/vim-classpath'
@@ -171,3 +172,14 @@ noremap  <Left> ""
 noremap! <Left> <Esc>
 noremap  <Right> ""
 noremap! <Right> <Esc>
+
+" Screen settings
+let g:ScreenImpl = 'Tmux'
+let g:ScreenShellTmuxInitArgs = '-2'
+let g:ScreenShellInitialFocus = 'shell'
+let g:ScreenShellQuitOnVimExit = 0
+map <F5> :ScreenShellVertical<CR>
+command -nargs=? -complete=shellcmd W  :w | :call g:ScreenShellSend("load'".@%."';")
+map <Leader>r :w<CR> :call g:ScreenShellSend("rspec ".@% . ':' . line('.'))<CR>
+map <Leader>e :w<CR> :call g:ScreenShellSend("cucumber --require features/step_definitions --format=pretty ".@% .':' . line('.'))<CR>
+map <Leader>b :w<CR> :call g:ScreenShellSend("break ".@% . ':' . line('.'))<CR>
