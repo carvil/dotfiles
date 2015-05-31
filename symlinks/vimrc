@@ -99,6 +99,9 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
+" Allow Ctrl+r to find/replace strings:
+vnoremap <C-r> "hy:%s/<C-r>h//g<left><left>
+
 " font
 " set guifont=Inconsolata:h12
 set guifont=Inconsolata-dz\ for\ Powerline:h12
