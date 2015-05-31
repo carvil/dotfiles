@@ -109,10 +109,10 @@ set guioptions=aAce
 
 " color scheme
 syntax enable
-set background=dark
-let g:solarized_visibility = "high"
-let g:solarized_contrast = "high"
-colorscheme solarized
+" set background=dark
+" let g:solarized_visibility = "high"
+" let g:solarized_contrast = "high"
+colorscheme jellybeans
 
 " Turn on line numbers
 set number
