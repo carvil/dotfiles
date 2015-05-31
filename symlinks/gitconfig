@@ -11,7 +11,7 @@
 	email = carlosvilhena@gmail.com
 [core]
   excludesfile = /Users/carvil/.gitignore_global
-  editor = mvim -f
+  editor = vim -f
 [color]
   ui = true
 [alias]
