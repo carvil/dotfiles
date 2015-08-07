@@ -35,6 +35,7 @@ Bundle 'tpope/vim-rake'
 Bundle 'tpope/vim-bundler'
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-rails'
+Bundle 'thoughtbot/vim-rspec'
 
 filetype on
 filetype plugin on
@@ -193,3 +194,11 @@ command -nargs=? -complete=shellcmd W  :w | :call g:ScreenShellSend("load'".@%."
 map <Leader>r :w<CR> :call g:ScreenShellSend("rspec ".@% . ':' . line('.'))<CR>
 map <Leader>e :w<CR> :call g:ScreenShellSend("cucumber --require features/step_definitions --format=pretty ".@% .':' . line('.'))<CR>
 map <Leader>b :w<CR> :call g:ScreenShellSend("break ".@% . ':' . line('.'))<CR>
+
+" RSpec.vim mappings
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
+
+let g:rspec_command = "!bundle exec rspec {spec}"
