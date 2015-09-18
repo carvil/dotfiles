@@ -139,6 +139,9 @@ set nobackup
 set nowb
 set noswapfile
 
+" Auto hide scratch
+let g:scratch_autohide = 1
+
 " clear last search highlighting
 nnoremap <leader>q :noh<CR>
 
