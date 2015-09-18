@@ -19,6 +19,8 @@ Bundle 'scrooloose/syntastic'
 Bundle 'kien/ctrlp.vim'
 Bundle 'benmills/vimux'
 Bundle 'ervandew/screen'
+Bundle 'tpope/vim-fugitive'
+Bundle 'godlygeek/tabular'
 
 " clojure specific
 Bundle 'tpope/vim-classpath'
