@@ -85,6 +85,9 @@ set smartindent
 " setup the leader key
 let mapleader = ","
 
+" spell checking on git commits
+autocmd FileType gitcommit setlocal spell spelllang=en_us
+
 " makes ,w split windows vertically
 nnoremap <leader>w <C-w>v<C-w>l
 
