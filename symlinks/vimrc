@@ -5,8 +5,6 @@ set runtimepath+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
-Bundle 'mattn/webapi-vim'
-Bundle 'mattn/gist-vim'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'tpope/vim-commentary'
 Bundle 'tpope/vim-dispatch'
@@ -17,8 +15,6 @@ Bundle 'Lokaltog/vim-powerline'
 Bundle 'duff/vim-scratch'
 Bundle 'Rename'
 Bundle 'Yggdroot/indentLine'
-Bundle 'slim-template/vim-slim'
-Bundle 'tpope/vim-cucumber'
 Bundle 'scrooloose/syntastic'
 Bundle 'kien/ctrlp.vim'
 Bundle 'benmills/vimux'
@@ -31,7 +27,6 @@ Bundle 'guns/vim-clojure-static'
 
 " ruby specific
 Bundle 'vim-ruby/vim-ruby'
-Bundle 'tpope/vim-rake'
 Bundle 'tpope/vim-bundler'
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-rails'
