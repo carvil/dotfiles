@@ -151,7 +151,9 @@ autocmd BufRead,BufNewFile *.cljs setlocal filetype=clojure
 " Set the default dispatch command
 autocmd FileType ruby let b:dispatch = 'bundle exec rake %'
 
-" Disable arrow keys
+let g:clojure_fuzzy_indent = 1
+let g:clojure_fuzzy_indent_patterns = ['^with', '^def', '^let', '^fact', '^facts']
+
 noremap  <Up> ""
 noremap! <Up> <Esc>
 noremap  <Down> ""
