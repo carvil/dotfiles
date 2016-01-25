@@ -149,7 +149,7 @@ func! DeleteTrailingWS()
   %s/\s\+$//ge
   exe "normal `z"
 endfunc
-autocmd BufWrite * :call DeleteTrailingWS()
+autocmd BufWritePre * :call DeleteTrailingWS()
 
 " Enable clojure script syntax highlighting
 autocmd BufRead,BufNewFile *.cljs setlocal filetype=clojure
