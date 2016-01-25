@@ -70,9 +70,6 @@ autocmd FileType gitcommit setlocal spell spelllang=en_us
 " makes ,w split windows vertically
 nnoremap <leader>w <C-w>v<C-w>l
 
-" Ctrl+w t toggles nerdtree
-map <C-w>t :NERDTreeToggle<CR>
-
 " split window navigation
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
