@@ -4,36 +4,38 @@ filetype plugin indent on
 set runtimepath+=~/.vim/bundle/vundle/
 call vundle#rc()
 
+" Vim Plugins {{{
 Bundle 'gmarik/vundle'
-Bundle 'airblade/vim-gitgutter'
 Bundle 'tpope/vim-commentary'
-Bundle 'tpope/vim-dispatch'
 Bundle 'rking/ag.vim'
 Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-obsession'
-Bundle 'Lokaltog/vim-powerline'
+Bundle 'powerline/powerline'
 Bundle 'mtth/scratch.vim'
 Bundle 'Rename'
-Bundle 'Yggdroot/indentLine'
 Bundle 'scrooloose/syntastic'
 Bundle 'kien/ctrlp.vim'
 Bundle 'benmills/vimux'
 Bundle 'ervandew/screen'
 Bundle 'tpope/vim-fugitive'
 Bundle 'godlygeek/tabular'
+Bundle 'tpope/vim-projectionist'
+Bundle 'ngmy/vim-rubocop'
+Bundle 'rizzatti/dash.vim'
 
 " clojure specific
 Bundle 'tpope/vim-classpath'
 Bundle 'tpope/vim-fireplace'
 Bundle 'guns/vim-clojure-static'
+Bundle 'guns/vim-clojure-highlight'
 
 " ruby specific
 Bundle 'vim-ruby/vim-ruby'
-Bundle 'tpope/vim-bundler'
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-rails'
 Bundle 'ecomba/vim-ruby-refactoring'
+Bundle 'tmhedberg/matchit'
 Bundle 'thoughtbot/vim-rspec'
+" " }}}
 
 filetype on
 filetype plugin on
