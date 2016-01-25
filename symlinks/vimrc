@@ -57,6 +57,9 @@ set expandtab
 set colorcolumn=81
 set scrolloff=3 " minimum lines to keep above and below cursor
 
+" Highlight matching paranthesis
+set showmatch
+
 " indent on new line
 set autoindent
 set smartindent
