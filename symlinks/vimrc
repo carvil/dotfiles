@@ -1,6 +1,6 @@
 set nocompatible
 
-filetype off
+filetype plugin indent on
 set runtimepath+=~/.vim/bundle/vundle/
 call vundle#rc()
 
