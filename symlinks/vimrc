@@ -82,6 +82,9 @@ nnoremap <C-l> <C-w>l
 " Allow Ctrl+r to find/replace strings:
 vnoremap <C-r> "hy:%s/<C-r>h//g<left><left>
 
+" Configure ctrl+p
+let g:ctrlp_match_window = 'bottom,order:ttb'
+
 " font
 " set guifont=Inconsolata:h12
 set guifont=Inconsolata-dz\ for\ Powerline:h12
