@@ -18,3 +18,4 @@
   co = checkout
   ci = commit
   rb = rebase
+  deleted = log --diff-filter=D --summary
