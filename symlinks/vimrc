@@ -86,6 +86,7 @@ vnoremap <C-r> "hy:%s/<C-r>h//g<left><left>
 
 " Configure ctrl+p
 let g:ctrlp_match_window = 'bottom,order:ttb'
+let g:ctrlp_use_caching = 0
 
 " font
 " set guifont=Inconsolata:h12
