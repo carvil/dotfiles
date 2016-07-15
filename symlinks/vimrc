@@ -21,6 +21,8 @@ Bundle 'godlygeek/tabular'
 Bundle 'tpope/vim-projectionist'
 Bundle 'ngmy/vim-rubocop'
 Bundle 'rizzatti/dash.vim'
+Bundle 'Shougo/unite.vim'
+Bundle 'Shougo/vimfiler.vim'
 
 " clojure specific
 Bundle 'tpope/vim-classpath'
