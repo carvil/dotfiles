@@ -19,3 +19,5 @@
   ci = commit
   rb = rebase
   deleted = log --diff-filter=D --summary
+[status]
+	displaycommentprefix = true
