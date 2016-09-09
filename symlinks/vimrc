@@ -23,6 +23,7 @@ Bundle 'ngmy/vim-rubocop'
 Bundle 'rizzatti/dash.vim'
 Bundle 'Shougo/unite.vim'
 Bundle 'Shougo/vimfiler.vim'
+Bundle 'mbbill/undotree'
 
 " clojure specific
 Bundle 'tpope/vim-classpath'
