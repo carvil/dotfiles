@@ -198,3 +198,10 @@ map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 
 let g:rspec_command = "!bundle exec rspec {spec}"
+
+" Running minitest for the current file
+function! RunMinitest()
+  execute "!bundle exec ruby -Ilib:test " .@%
+endfunction
+
+map <leader>mt :call RunMinitest()<CR>
