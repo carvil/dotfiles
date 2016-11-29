@@ -31,6 +31,10 @@ Bundle 'tpope/vim-fireplace'
 Bundle 'guns/vim-clojure-static'
 Bundle 'guns/vim-clojure-highlight'
 
+" javascript specific
+Bundle 'pangloss/vim-javascript'
+Bundle 'moll/vim-node'
+
 " ruby specific
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-endwise'
