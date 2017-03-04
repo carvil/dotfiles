@@ -77,6 +77,9 @@ let mapleader = ","
 " spell checking on git commits
 autocmd FileType gitcommit setlocal spell spelllang=en_us
 
+" line wrap at 72 characters on git commits
+autocmd FileType gitcommit set tw=72
+
 " makes ,w split windows vertically
 nnoremap <leader>w <C-w>v<C-w>l
 
