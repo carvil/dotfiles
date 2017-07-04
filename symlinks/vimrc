@@ -151,6 +151,9 @@ vmap <M-k> :m'<-2<cr>`>my`<mzgv`yo`z
 " line wrap at 72 characters on git commits
 autocmd FileType gitcommit set tw=72
 
+" add to the list of files to ignore
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+
 " Run midje tests in vim
 nnoremap <leader>rt :Eval (do (require 'midje.repl) (time (midje.repl/load-facts)))<CR>
 
