@@ -148,6 +148,9 @@ nmap <M-k> mz:m-2<cr>`z
 vmap <M-j> :m'>+<cr>`<my`>mzgv`yo`z
 vmap <M-k> :m'<-2<cr>`>my`<mzgv`yo`z
 
+" line wrap at 72 characters on git commits
+autocmd FileType gitcommit set tw=72
+
 " Run midje tests in vim
 nnoremap <leader>rt :Eval (do (require 'midje.repl) (time (midje.repl/load-facts)))<CR>
 
