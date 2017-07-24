@@ -29,6 +29,9 @@ alias gci='git ci'
 alias grb='git rb'
 alias glg="git log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'"
 
+# bundler alias
+alias be='bundle exec '
+
 # github username
 export GITHUB_USER="carvil"
 
