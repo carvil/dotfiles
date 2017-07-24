@@ -24,6 +24,7 @@ Plugin 'Shougo/unite.vim'
 Plugin 'Shougo/vimfiler.vim'
 Plugin 'mbbill/undotree'
 Plugin 'w0rp/ale'
+Plugin 'nanotech/jellybeans.vim'
 
 " clojure specific
 Plugin 'tpope/vim-classpath'
