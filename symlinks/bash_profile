@@ -22,12 +22,3 @@ source ~/git-completion.bash
 
 # For redcarpet
 alias gcc-4.2='gcc'
-
-# {{{
-# Node Completion - Auto-generated, do not touch.
-shopt -s progcomp
-for f in $(command ls ~/.node-completion); do
-  f="$HOME/.node-completion/$f"
-  test -f "$f" && . "$f"
-done
-# }}}
