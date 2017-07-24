@@ -3,6 +3,7 @@
 [user]
 	name = Carlos Vilhena
 	email = carlosvilhena@gmail.com
+	signingkey = 9F94EE85
 [core]
   excludesfile = /Users/carvil/.gitignore_global
   editor = vim -f
