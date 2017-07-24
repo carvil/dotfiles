@@ -33,8 +33,7 @@ alias glg="git log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(wh
 export GITHUB_USER="carvil"
 
 path=(
-  ~/.rbenv/bin
-  /Applications/p4/p4merge.app/Contents/MacOS/
+  /usr/local/opt/rbenv/shims
   /usr/local/{bin,sbin}
   /usr/local/heroku/bin
   /usr/{bin,sbin}
