@@ -15,7 +15,7 @@ export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules/
 export PROMPT_COMMAND='echo -ne "\033]0;${USER} @ ${PWD/#$HOME/~}\007"'
 
 # Setup bundler default editor
-export BUNDLER_EDITOR='mvim'
+export BUNDLER_EDITOR='vim'
 
 # Enable git autocomplete
 source ~/git-completion.bash
