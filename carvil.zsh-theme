@@ -16,9 +16,6 @@ RPS1='${return_code}'
 eval my_gray='$FG[230]'
 eval my_orange='$FG[214]'
 
-# right prompt
-RPROMPT='$my_gray python-$(pyenv version-name) / ruby-$(rbenv_prompt_info) %{$reset_color%}%'
-
 # git settings
 ZSH_THEME_GIT_PROMPT_PREFIX="$FG[075](branch:"
 ZSH_THEME_GIT_PROMPT_CLEAN=""
