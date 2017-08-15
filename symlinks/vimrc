@@ -25,6 +25,7 @@ Plugin 'Shougo/vimfiler.vim'
 Plugin 'mbbill/undotree'
 Plugin 'w0rp/ale'
 Plugin 'nanotech/jellybeans.vim'
+Plugin 'janko-m/vim-test'
 
 " clojure specific
 Plugin 'tpope/vim-classpath'
@@ -42,7 +43,6 @@ Plugin 'tpope/vim-endwise'
 Plugin 'tpope/vim-rails'
 Plugin 'ecomba/vim-ruby-refactoring'
 Plugin 'tmhedberg/matchit'
-Plugin 'thoughtbot/vim-rspec'
 
 " elixir Plugins
 Plugin 'elixir-lang/vim-elixir'
@@ -204,17 +204,12 @@ let g:ScreenShellInitialFocus = 'shell'
 let g:ScreenShellQuitOnVimExit = 0
 map <F5> :ScreenShellVertical<CR>
 command -nargs=? -complete=shellcmd W  :w | :call g:ScreenShellSend("load'".@%."';")
-map <Leader>r :w<CR> :call g:ScreenShellSend("rspec ".@% . ':' . line('.'))<CR>
-map <Leader>e :w<CR> :call g:ScreenShellSend("cucumber --require features/step_definitions --format=pretty ".@% .':' . line('.'))<CR>
-map <Leader>b :w<CR> :call g:ScreenShellSend("break ".@% . ':' . line('.'))<CR>
 
-" RSpec.vim mappings
-map <Leader>t :call RunCurrentSpecFile()<CR>
-map <Leader>s :call RunNearestSpec()<CR>
-map <Leader>l :call RunLastSpec()<CR>
-map <Leader>a :call RunAllSpecs()<CR>
-
-let g:rspec_command = "!bundle exec rspec {spec}"
+nmap <silent> <leader>s :TestNearest<CR>
+nmap <silent> <leader>t :TestFile<CR>
+nmap <silent> <leader>a :TestSuite<CR>
+nmap <silent> <leader>l :TestLast<CR>
+nmap <silent> <leader>g :TestVisit<CR>
 
 " Running minitest for the current file
 function! RunMinitest()
