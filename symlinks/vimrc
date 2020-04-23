@@ -26,6 +26,7 @@ Plugin 'mbbill/undotree'
 Plugin 'w0rp/ale'
 Plugin 'morhetz/gruvbox'
 Plugin 'janko-m/vim-test'
+Plugin 'sheerun/vim-polyglot'
 
 " clojure specific
 Plugin 'tpope/vim-classpath'
