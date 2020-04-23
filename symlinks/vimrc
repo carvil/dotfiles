@@ -234,3 +234,6 @@ let g:ale_linters = {
 
 let g:vim_jsx_pretty_colorful_config = 1
 let g:jsx_ext_required = 0
+
+" Vim Fugitive - config
+set diffopt+=vertical
