@@ -24,7 +24,7 @@ Plugin 'Shougo/unite.vim'
 Plugin 'Shougo/vimfiler.vim'
 Plugin 'mbbill/undotree'
 Plugin 'w0rp/ale'
-Plugin 'nanotech/jellybeans.vim'
+Plugin 'morhetz/gruvbox'
 Plugin 'janko-m/vim-test'
 
 " clojure specific
@@ -117,7 +117,8 @@ set winwidth=80
 
 " color scheme
 syntax enable
-colorscheme jellybeans
+" colorscheme jellybeans
+colorscheme gruvbox
 
 " Turn on line numbers
 set number
